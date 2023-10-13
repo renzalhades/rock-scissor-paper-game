@@ -1,0 +1,44 @@
+@import url("index-header.css");
+@import url("index-main.css");
+@import url("index-footer.css");
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    justify-content: space-between;
+}
+
+#header{
+    height: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+}
+
+#main{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#footer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(31, 31, 31, 0.979);
+    color:antiquewhite;
+    overflow-y: hidden;
+}
+

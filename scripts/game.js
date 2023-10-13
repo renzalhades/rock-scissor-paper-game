@@ -53,7 +53,7 @@ function oneRound (playerSelect, computerSelect)
                     break;
             }
 
-        alert (result);
+        // alert (result);
         console.log (playerSelect + "  " + computerSelect)
         return winner;
     }
@@ -77,7 +77,7 @@ function oneGame (roundLimit)
 
                 else if (winner  == "draw")
                     {}
-                alert (playerScore + "   " + computerScore);
+                // alert (playerScore + "   " + computerScore);
             }
     }
 
