@@ -1,0 +1,19 @@
+/* INDEX FOOTER STYLES */
+
+.personal-accounts{
+    margin-top: 0.5em;
+    display: flex;
+    align-self: center;
+    gap: 1em;
+    font-size: 2em;
+}
+
+.personal-accounts a{
+    color:antiquewhite;
+}
+
+#footer div p{
+    margin: 1em 0em;
+    text-align: center;
+    font-size: 1em;
+}

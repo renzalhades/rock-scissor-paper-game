@@ -1,0 +1,107 @@
+/* INDEX-MAIN STYLE */
+
+.scoreboard,
+.middleboard{
+    background-color: rgb(252, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 0.15em solid;
+    flex-shrink: 1.5;   
+}
+
+.scoreboard{
+    height: 40em;
+    min-width: 20em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    align-items: center;
+    border-radius: 3em;
+    gap: 2em;
+    box-shadow: 1.5em 1.5em 2em  rgb(97, 97, 97);
+}
+
+.middleboard{
+    background-color: rgba(236, 227, 217, 0.801);
+    height: 30em;
+    width: 33em;
+    border-radius: 5em;
+    box-shadow: 1.5em 1.5em 2em  rgb(97, 97, 97);
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    align-items: center;
+    flex-shrink: 1;
+    margin: 0em 6em;
+    gap: 3em;
+}
+
+.player-img{
+    margin-top: 1em;
+    width: 15em;
+    height: 15em;
+    border: 0.5em double;
+    border-radius: 15em;
+    background-color: rgb(121, 130, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-img i{
+    font-size: 8em;
+}
+
+.player-name{
+    font: 3em Verdana;
+    font-weight: 600;
+}
+.player-score{
+    border: 3px solid;
+    border-radius: 0.5em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 7.5em Verdana;
+    font-weight: 800;
+}
+
+button,
+.player-choice,
+.computer-choice{
+    margin: 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    font-size: 2.5em;
+    flex-shrink: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+.player-color{
+    color: rgb(63, 181, 218);
+}
+
+.computer-color{
+    color: rgb(248, 128, 107);
+}
+
+.fa-solid{
+    flex-shrink: 1;
+}
+
+.versus{
+    flex-shrink: 1;
+    font-size: 5em;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
