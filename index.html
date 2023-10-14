@@ -11,17 +11,18 @@
 
 <body id="content">
     <div id="header">
-        <div class="header-title">
+        <div class="header-title  fa-fade">
             <h1>Rock Paper Scissor</h1>
         </div>
     </div>
 
     <div id="main">
-        <div class="scoreboard">
+        <div class="scoreboard player-color">
             <div class="player-img">
+                <i class="fa-solid fa-user-secret"></i>
             </div>
 
-            <div class="player-name">
+            <div class="player-name"> You
             </div>
 
             <div class="player-score">
@@ -30,14 +31,29 @@
         </div>
 
         <div class="middleboard">
-
-        </div>
-
-        <div class="scoreboard">
-            <div class="player-img">
+            <div class="player-choice">
+            <button id="rock" class="fa-solid fa-hand-back-fist fa-rotate-90 player-color"></button>
+            <button id="paper"  class="fa-solid fa-hand fa-rotate-90 player-color"></button>
+            <button id="scissor" class="fa-solid fa-hand-scissors fa-flip-horizontal player-color"></button>
             </div>
 
-            <div class="player-name">
+            <div class="versus">
+                V.S
+            </div>
+            
+            <div class="computer-choice fa-flip-horizontal">
+                <button class="fa-solid fa-hand-back-fist fa-rotate-90 computer-color"></button>
+                <button class="fa-solid fa-hand fa-rotate-90 computer-color"></button>
+                <button class="fa-solid fa-hand-scissors fa-flip-horizontal computer-color"></button>
+            </div>
+        </div>
+
+        <div class="scoreboard computer-color">
+            <div class="player-img">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <div class="player-name">Computer
             </div>
 
             <div class="player-score">
