@@ -1,11 +1,12 @@
 /* INDEX FOOTER STYLES */
 
 .personal-accounts{
-    margin-top: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
     display: flex;
     align-self: center;
-    gap: 1em;
-    font-size: 2em;
+    gap: 2em;
+    font-size: 1em;
 }
 
 .personal-accounts a{
@@ -13,7 +14,7 @@
 }
 
 #footer div p{
-    margin: 1em 0em;
+    margin: 0.5em 0em;
     text-align: center;
     font-size: 1em;
 }
