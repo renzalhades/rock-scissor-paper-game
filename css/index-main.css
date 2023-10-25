@@ -24,33 +24,10 @@
     box-shadow: 1.5em 1.5em 2em  rgb(97, 97, 97);
 }
 
-div.player-color{
-    margin-right: 3em;
+div.player-color,
+div.computer-color {
     display: flex;
 }
-div.computer-color{
-    margin-left: 3em;
-    display: flex;
-}
-
- .choice-history-player{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5em;
-    font-size: 3em;
-    margin-left: 1.5em
-}
-
-.choice-history-computer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5em;
-    font-size: 3em;
-    margin-right: 1.5em
-}
-
 
 .middleboard{
     background-color: rgba(236, 227, 217, 0.801);
@@ -63,9 +40,8 @@ div.computer-color{
     justify-content: space-evenly;
     padding: 2em;
     align-items: center;
+    align-self: flex-start;
     flex-shrink: 1;
-    margin: 0em 1em;
-    gap: 3em;
 }
 
 .player-img{
@@ -88,6 +64,7 @@ div.computer-color{
     font: 3em Verdana;
     font-weight: 600;
 }
+
 .player-score{
     border: 3px solid;
     border-radius: 0.5em;
@@ -98,6 +75,26 @@ div.computer-color{
     align-items: center;
     font: 7.5em Verdana;
     font-weight: 800;
+}
+
+.choice-history-computer,
+.choice-history-player {
+    width: 3em;
+    height: 17.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 2.3em;
+    overflow: hidden;
+}
+
+ol.choice-history-computer{
+    margin-right: 1.5em
+}
+ol.choice-history-player{
+    margin-left: 1.5em;
 }
 
 button,
@@ -136,10 +133,6 @@ i{
     
 }
 
-.round-list{
-
-}
-
 .overlay {
     display: none;
     position: fixed;
@@ -154,23 +147,22 @@ i{
 .restart-modal{
     display:none;
     position: fixed;
-    padding: 1em;
+    padding: 0.5em;
     top: 35%;
-    left: 29.3%;
-    width: fit-content;
-    height: fit-content;
+    width: 400px;
+    height: 180px;
     background-color: rgba(240, 248, 255, 0.911);
     font-size: 3em;
     font-weight: 600;
     text-align: center;
     border: solid 0.15em;
     border-radius: 1em;
+    align-self: center;
 }
 
 button.restart{
-    margin-top: 0.5em;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.8em;
     background-color: rgba(240, 248, 255, 0.911);
     color: inherit;
     padding: 0.3em;
@@ -180,15 +172,31 @@ button.restart{
 
 .game-result, .restart{
     color: inherit;
+    
 }
 
 button.restart:hover{
     background-color: rgba(6, 250, 128, 0.774);
 }
 
+.round-result{
+    display: none;
+    position: fixed;
+    font-size: 2.2em;
+    font-weight: 600;
+    top: 77%;
+    align-self: center;
+    min-width: fit-content;
+    text-align: center;
+    z-index: 0;
+    color: rgb(0, 196, 98);
+
+}
+
 .active {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
